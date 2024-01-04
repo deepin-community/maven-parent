@@ -56,21 +56,29 @@ mvn -Preporting site-deploy
 * History
 
 #if( $project.version.endsWith( "SNAPSHOT" ) )
-#**##set( $prev = 30 )
+#**##set( $prev = 35 )
   master: {{{https://github.com/apache/maven-parent/tree/master/maven-plugins/pom.xml}$project.version}}
-  ({{{https://gitbox.apache.org/repos/asf?p=maven-parent.git;a=blobdiff;f=maven-plugins/pom.xml;hb=master;hpb=maven-parent-$prev}diff}})
+  ({{{https://github.com/apache/maven-parent/compare/maven-parent-$prev...master#diff}diff}})
 #end
 #macro ( display $version $date )
 #**##set( $prev = $version - 1 )
 |  {{{https://github.com/apache/maven-parent/tree/maven-parent-$version/maven-plugins/pom.xml}$version}}
-| ({{{https://gitbox.apache.org/repos/asf?p=maven-parent.git;a=blobdiff;f=maven-plugins/pom.xml;hb=maven-parent-$version;hpb=maven-parent-$prev}diff}}) | $date |
+| ({{{https://github.com/apache/maven-parent/compare/maven-parent-$prev...maven-parent-$version#diff}diff}}) | $date |
 #end
 
-    As of version 30, this POM sets the Java source and target versions to 1.6. Thus any plugin
-    moved to version 30+ of this POM moves to requiring Java 1.6 (was Java 1.5 since version 22).
+    As of version 34, this POM sets the Java source and target versions to 1.7. Thus, as any plugin (or other component)
+    moved to version 34+ of this POM, it moves to requiring Java 1.7 (was Java 1.5 since version 21, and Java 1.6 since version 27).
 
 *--------------+------------+
 || <<Version>> || <<Release Date>> ||
+*--------------+------------+
+#display( 35, '2022-03-02' )
+*--------------+------------+
+#display( 34, '2020-01-30' )
+*--------------+------------+
+#display( 33, '2018-09-11' )
+*--------------+------------+
+#display( 32, '2018-07-18' )
 *--------------+------------+
 #display( 31, '2018-02-05' )
 *--------------+------------+

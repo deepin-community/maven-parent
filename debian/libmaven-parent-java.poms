@@ -17,10 +17,10 @@
 #   --no-usj-versionless: don't install the versionless link in /usr/share/java
 #   --dest-jar=<path>: the destination for the real jar
 #
-pom.xml --has-package-version --site-xml=src/site-docs/site.xml --keep-elements=build --relocate=org.apache.maven:maven-parent:27
+pom.xml --has-package-version --site-xml=src/site-docs/site.xml --keep-elements=build --relocate=org.apache.maven:maven-parent:27 --relocate=org.apache.maven:maven-parent:31
 apache-resource-bundles/pom.xml --ignore
-doxia-tools/pom.xml --ignore
-maven-archetype-bundles/pom.xml --ignore
-maven-plugins/pom.xml --ignore
-maven-shared-components/pom.xml --ignore
+doxia-tools/pom.xml --has-package-version --keep-elements=build
+maven-extensions/pom.xml --has-package-version --keep-elements=build
+maven-plugins/pom.xml --has-package-version --keep-elements=build
+maven-shared-components/pom.xml --has-package-version --keep-elements=build
 maven-skins/pom.xml --ignore

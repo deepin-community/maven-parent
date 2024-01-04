@@ -19,18 +19,19 @@ specific language governing permissions and limitations
 under the License.
 -->
 
-<project xmlns="http://maven.apache.org/DECORATION/1.7.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/DECORATION/1.7.0 http://maven.apache.org/xsd/decoration-1.7.0.xsd">
+<project xmlns="http://maven.apache.org/DECORATION/1.8.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/DECORATION/1.8.0 http://maven.apache.org/xsd/decoration-1.8.0.xsd">
+
   <body>
     <breadcrumbs>
       <item name="Maven" href="https://maven.apache.org/pom/maven/index.html" />
-      <item name="Plugins" href="https://maven.apache.org/pom/maven/maven-plugin/index.html" />
+      <item name="Plugins" href="https://maven.apache.org/pom/maven/maven-plugins/index.html" />
     </breadcrumbs>
 
     <menu name="Maven Parent POMs">
       <item name="Maven" href="../index.html"/>
-      <item name="Archetypes" href="../maven-archetypes-bundles/index.html"/>
       <item name="Plugins" href="../maven-plugins/index.html"/>
+      <item name="Extensions" href="../maven-extensions/index.html"/>
       <item name="Shared Components" href="../maven-shared-components/index.html"/>
       <item name="Skins" href="../maven-skins/index.html"/>
       <item name="Doxia Tools" href="../doxia-tools/index.html"/>

@@ -25,7 +25,7 @@
   <parent>
     <groupId>org.apache.maven</groupId>
     <artifactId>maven-parent</artifactId>
-    <version>31</version>
+    <version>35</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
@@ -42,7 +42,7 @@
   </issueManagement>
 
   <ciManagement>
-    <url>https://builds.apache.org/job/maven-project-resources/</url>
+    <url>https://ci-builds.apache.org/job/Maven/job/maven-box/job/maven-project-resources/</url>
     <system>Jenkins</system>
   </ciManagement>
 
@@ -89,12 +89,6 @@
             </dependency>
 -->
           </dependencies>
-        </plugin>
-        <plugin>
-          <artifactId>maven-release-plugin</artifactId>
-          <configuration>
-            <tagBase>https://svn.apache.org/repos/asf/maven/resources/tags</tagBase>
-          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>

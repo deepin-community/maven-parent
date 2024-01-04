@@ -26,7 +26,7 @@ under the License.
   <parent>
     <groupId>org.apache.maven</groupId>
     <artifactId>maven-parent.</artifactId>
-    <version>31</version>
+    <version>35</version>
     <relativePath>../site-pom.xml</relativePath>
   </parent>
 
@@ -39,6 +39,6 @@ under the License.
 
   <issueManagement>
     <system>jira</system>
-    <url>https://issues.apache.org/jira/browse/MPOM/component/12314501</url>
+    <url>https://issues.apache.org/jira/projects/MPOM</url>
   </issueManagement>
 </project>

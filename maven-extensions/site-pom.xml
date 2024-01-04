@@ -26,19 +26,19 @@ under the License.
   <parent>
     <groupId>org.apache.maven</groupId>
     <artifactId>maven-parent.</artifactId>
-    <version>31</version>
+    <version>35</version>
     <relativePath>../site-pom.xml</relativePath>
   </parent>
 
-  <groupId>org.apache.maven.archetypes</groupId>
-  <artifactId>maven-archetypes-bundles</artifactId>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-extensions</artifactId>
   <packaging>pom</packaging>
 
-  <name>Apache Maven Archetypes Parent POM</name>
-  <description>This project consists of a POM that contains settings that are likely to be useful to any Maven Archetype that is building and releasing code with Maven.</description>
+  <name>Apache Maven Extensions Parent POM</name>
+  <description>This project consists of a POM that contains settings that are likely to be useful to any Maven extension that is building and releasing code with Maven.</description>
 
   <issueManagement>
     <system>jira</system>
-    <url>https://issues.apache.org/jira/browse/MPOM/component/12328304</url>
+    <url>https://issues.apache.org/jira/issues/?jql=project%20%3D%20MPOM%20AND%20component%20%3D%20maven-extensions</url>
   </issueManagement>
 </project>
