@@ -3,11 +3,11 @@ Section: java
 Priority: optional
 Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
 Uploaders: Ludovic Claude <ludovic.claude@laposte.net>
-Build-Depends: debhelper (>= 11~),
+Build-Depends: debhelper-compat (= 13),
                default-jdk,
                libapache-pom-java (>= 7),
                maven-repo-helper (>= 1.9.3~)
-Standards-Version: 4.1.4
+Standards-Version: 4.6.1
 Vcs-Git: https://salsa.debian.org/java-team/maven-parent.git
 Vcs-Browser: https://salsa.debian.org/java-team/maven-parent
 Homepage: http://maven.apache.org/

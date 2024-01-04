@@ -21,6 +21,7 @@ under the License.
 
 <project xmlns="http://maven.apache.org/DECORATION/1.8.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/DECORATION/1.8.0 http://maven.apache.org/xsd/decoration-1.8.0.xsd">
+
   <bannerLeft>
     <name>${project.name}</name>
     <src>https://maven.apache.org/images/apache-maven-project.png</src>
@@ -35,7 +36,7 @@ under the License.
   <skin>
     <groupId>org.apache.maven.skins</groupId>
     <artifactId>maven-fluido-skin</artifactId>
-    <version>1.7</version>
+    <version>1.10.0</version>
   </skin>
 
   <edit>${project.scm.url}</edit>
@@ -48,9 +49,7 @@ under the License.
         <user>ASFMavenProject</user>
         <showUser>true</showUser>
       </twitter>
-      <googleSearch>
-        <sitesearch/>
-      </googleSearch>
+      <googleSearch />
     </fluidoSkin>
   </custom>
 
@@ -72,6 +71,7 @@ under the License.
       <item name="Archetype"         href="https://maven.apache.org/archetype/index.html" />
       <item name="Artifact Resolver" href="https://maven.apache.org/resolver/index.html" />
       <item name="Doxia"             href="https://maven.apache.org/doxia/index.html" />
+      <item name="Extensions"        href="https://maven.apache.org/extensions/index.html" />
       <item name="JXR"               href="https://maven.apache.org/jxr/index.html" />
       <item name="Maven"             href="https://maven.apache.org/ref/current" />
       <item name="Parent POMs"       href="https://maven.apache.org/pom/index.html" />

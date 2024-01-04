@@ -1,3 +1,15 @@
+maven-parent (35-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release
+    - Install the new maven-extensions pom
+    - Relocate the version 31 to the current one
+  * Install the doxia-tools, maven-plugins and maven-shared-components poms
+  * Standards-Version updated to 4.6.1
+  * Switch to debhelper level 13
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Thu, 15 Dec 2022 14:33:40 +0100
+
 maven-parent (31-2) unstable; urgency=medium
 
   * Team upload.
