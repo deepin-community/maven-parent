@@ -3,7 +3,7 @@
  -----
  Hervé Boutemy
  -----
- 2015-11-21
+ 2020-01-16
  -----
 
 ~~ Licensed to the Apache Software Foundation (ASF) under one
@@ -28,12 +28,23 @@
 
 ${project.name}
 
-    This POM is the common parent of all of the {{{/doxia/doxia-tools/}Maven Doxia Tools}}
+    This POM is the common parent of all of the {{{/extensions/}Maven extensions}}
     in the Apache Maven project.
+
+* The <<<run-its>>> Profile
+
+    This POM provides <<<run-its>>> profile for running Integration Tests to check real extension execution.
+    A default configuration for <<<maven-invoker-plugin>>> is defined, that every extension needs to enhance
+    to match its prerequisite. Then ITs are launched in every extension with following command:
+
++---+
+mvn -Prun-its verify
++---+
+
 
 * Site Publication
 
-    Since Doxia Tools are always mono-module builds, this parent POM has configured <<<maven-scm-publish-plugin>>>
+    Since Maven extensions are always mono-module builds, this parent POM has configured <<<maven-scm-publish-plugin>>>
     {{{/plugins/maven-scm-publish-plugin/examples/one-module-configuration.html}mono module optimization}}
     to ease site build & deployment in only one integrated and simplified command:
 

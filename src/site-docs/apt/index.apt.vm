@@ -36,7 +36,7 @@ Maven Project Parent POM
     provide {{{./dependency-management.html}minimal dependencyManagement}} for
     plexus-component and plugin-tools annotations.
 
-    This POM contains Maven developers information for the {{{./team-list.html}Project Team report}},
+    This POM contains Maven developers information for the {{{./team.html}Project Team report}},
     sorted by role and id.
     See the LDAP extract for more accurate {{{https://people.apache.org/committers-by-project.html#maven}committers}}
     and {{{https://people.apache.org/committers-by-project.html#maven-pmc}PMC members}} lists. 
@@ -88,23 +88,31 @@ mvn scm-publish:publish-scm
 * History
 
 #if( $project.version.endsWith( "SNAPSHOT" ) )
-#**##set( $prev = 30 )
+#**##set( $prev = 35 )
   master: {{{https://github.com/apache/maven-parent/tree/master/pom.xml}$project.version}}
-  ({{{https://gitbox.apache.org/repos/asf?p=maven-parent.git;a=blobdiff;f=pom.xml;hb=master;hpb=maven-parent-$prev}diff}},
+  ({{{https://github.com/apache/maven-parent/compare/maven-parent-$prev...master#diff}diff}},
   {{{https://github.com/apache/maven-parent/compare/maven-parent-$prev...master}commits}})
 #end
 #macro ( display $version $date )
 #**##if ( $version == 30 ) #set( $prev = 27 )#else#set( $prev = $version - 1 )#end
 |  {{{https://github.com/apache/maven-parent/tree/maven-parent-$version/pom.xml}$version}}
-| ({{{https://gitbox.apache.org/repos/asf?p=maven-parent.git;a=blobdiff;f=pom.xml;hb=maven-parent-$version;hpb=maven-parent-$prev}diff}},
+| ({{{https://github.com/apache/maven-parent/compare/maven-parent-$prev...maven-parent-$version#diff}diff}},
 |  {{{https://github.com/apache/maven-parent/compare/maven-parent-$prev...maven-parent-$version}commits}}) | $date |
 #end
 
-    As of version 27, this POM sets the Java source and target versions to 1.6. Thus, as any plugin (or other component)
-    moved to version 27+ of this POM, it moves to requiring Java 1.6 (was Java 1.5 since version 21).
+    As of version 34, this POM sets the Java source and target versions to 1.7. Thus, as any plugin (or other component)
+    moved to version 34+ of this POM, it moves to requiring Java 1.7 (was Java 1.5 since version 21, and Java 1.6 since version 27).
 
 *--------------+------------+
 || <<Version>> || <<Release Date>> ||
+*--------------+------------+
+#display( 35, '2022-03-02' )
+*--------------+------------+
+#display( 34, '2020-01-30' )
+*--------------+------------+
+#display( 33, '2018-09-11' )
+*--------------+------------+
+#display( 32, '2018-07-18' )
 *--------------+------------+
 #display( 31, '2018-02-05' )
 *--------------+------------+
